@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <title>Lux - Luxury Design Agency</title>
+</head>
+<body class="site">
+  <h1 class="hidden">Lux - Luxury Design Agency</h1>
+  <a class="hidden" href="#content">Skip to Content</a>
+  <!-- begin header -->
+  <header class="header">
+    <div class="logo">
+      <img src="" alt="Lux Logo">
+    </div>
+    <!-- begin mobile menu -->
+    <div class="mobile">
+      <input type="checkbox" id="overlay-input"/>
+      <label for="overlay-input" id="overlay-button"><span></span></label>
+      <div id="overlay">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="team.html">About Us</a></li>
+          <li><a href="portfolio.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end mobile menu -->
+    <!-- begin navigation -->
+    <nav class="nav full" aria-label="Main Navigation">
+      <h3 class="hidden">Main Navigation</h3>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="team.html">About Us</a></li>
+        <li><a href="portfolio.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end navigation -->
+  </header>
+  <!-- end header -->
+  <!-- begin body -->
+  <main class="main" id="content">
+    <!-- begin hero -->
+    <section class="hero">
+      <h2 class="hidden">Introduction Video</h2>
+      <div class="hero-vid">
+        <!-- need to figure out how to make the video responsive -->
+        <video poster="" autoplay="true" loop>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+      <div class="videoControls">
+        <!-- need to figure out these controls -->
+      </div>
+    </section>
+    <!-- end hero -->
+    <!-- begin brand introduction -->
+    <section class="indexBody">
+    <h2 class="hidden">We Are Luxury</h2>
+      <div class="chooseLux">
+        <p class="titleText">We Are Luxury</p>
+        <p class="paragraph">INSERT COPY HERE</p>
+      </div>
+    <h2 class="hidden">Brand Examples</h2>
+      <div class="adImages">
+        <!-- need to source the correct images, always largest to smallest -->
+        <picture>
+            <!-- image one -->
+            <source media="(min-width:800px)" srcset="images/2200x840.png">
+           <source media="(min-width:465px)" srcset="images/480x480.png">
+           <img src="images/480x480.png" alt="FPO">
+        </picture>
+        <picture>
+            <!-- image two -->
+            <source media="(min-width:800px)" srcset="images/2200x840.png">
+           <source media="(min-width:465px)" srcset="images/480x480.png">
+           <img src="images/480x480.png" alt="FPO">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <!-- end body -->
+  <!-- begin footer -->
+  <footer class="footer">
+    <h2 class="hidden">Lux Site Footer</h2>
+    <div class="two-items custom-override margin-tb mobile-padding">
+      <nav aria-label="Footer Navigation">
+      <h3 class="hidden">Footer Navigation</h3>
+        <div class="three-items">
+          <div>
+            <a href="featurePort.html">What we do.</a>
+            <a href="team.html">About us.</a>
+            <a href="portfolio.html">Our work.</a>
+          </div>
+          <div>
+            <h4><a href="contact.html">Let's Talk</a></h4>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="one-item border-top copyright">
+      <p>©2023 Lux Design Agency. All Rights Reserved.</p>
+    </div>
+    <div class="socialIcons">
+      <!-- need to insert social icons -->
+    </div>
+  </footer>
+  <!-- end footer -->
+</body>
+</html>
