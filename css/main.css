@@ -120,6 +120,10 @@ body {
 	font-weight: bold;
 	color: #171B3B;
 }
+.centerTitle {
+	text-align: center;
+	margin-bottom: 3em;
+}
 
 .paragraph {
 	font-family: 'Open Sans', sans-serif;
@@ -144,6 +148,28 @@ Begin Floats
 /*
 End Floats
 */
+
+/* Begin mobile Team Picture
+*/
+
+.team-pic {
+	display: grid;
+	grid-column: span 1;
+	margin-bottom: 3em;
+}
+
+.team-pic img {
+	width: 100%;
+}
+
+.team-pic p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.75em;
+	font-weight: bold;
+	color: #171B3B;
+	margin-top: 1em;
+	text-align: center;
+}
 
 /*
 Begin Mobile Padding
@@ -568,4 +594,4 @@ End Mobile Footer
 */
 
 	}
-   }
+   
