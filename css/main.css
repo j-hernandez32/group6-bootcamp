@@ -530,6 +530,40 @@ Begin Mobile Body
 	padding-left: 2.5em;
 }
 
+.teamHeroContent {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+
+.teamHeroContent img {
+	width: 100%;
+}
+
+.heroTitle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-bottom: 4px solid;
+	border-bottom-color: #F7AF2A;
+}
+
+.portfolioPic {
+	display: grid;
+	grid-column: span 1;
+	margin-bottom: 3em;
+}
+
+.portfolioPic img {
+	width: 75%;
+	margin: 0 auto;
+}
+
 /*
 End Mobile Body
 */
@@ -623,4 +657,3 @@ End Mobile Footer
 */
 
 	}
-   
