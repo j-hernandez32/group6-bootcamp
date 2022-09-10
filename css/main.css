@@ -1,0 +1,571 @@
+/*
+Style Name: Bootcamp - Lux Design Agency
+Author: Krystal Furlani, Zhihan Chen, Hannah Di Renzo, Jessica Hernandez
+Version: 1.0
+*/
+
+/*
+Accessibility
+*/
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/*
+	CSS Index
+*/
+
+/*
+	01. General Styles
+	02. CSS Grid
+*/
+
+/* ---
+	01. General Styles
+--- */
+
+.hidden {
+	display: none;
+}
+
+.box-model {
+	margin: 1rem;
+	padding: 1rem;
+	background: #000;
+}
+
+.margin-left {
+	margin-left: 1em;
+}
+
+.margin-tb {
+	margin: 2em 0 5em;
+}
+
+.margin-top {
+	margin-top: 1em;
+}
+
+.border-top {
+	border-top: 1px solid #9a2018;
+	padding-top: 1.5em;
+	margin: 0 1em 1em;
+}
+
+.grey-border-top {
+	border-top: 1px solid #ccc;
+}
+
+.lg-font {
+	font-size: 1.25em;
+}
+
+form {
+	width: 100%;
+}
+
+input, textarea {
+	width: 95%;
+	padding: 1em;
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 1em;
+}
+
+input[type="submit"] {
+	width: inherit;
+	padding: 1em 2em;
+	background-color: #9a2018;
+	color: #fff;
+	border: none;
+	float: right;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	cursor: crosshair;
+}
+
+.titleText {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #171B3B;
+}
+
+.paragraph {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*
+Begin Floats
+*/
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+/*
+End Floats
+*/
+
+/*
+Begin Mobile Padding
+*/
+
+.mobile-padding {
+	padding: 0 1em;
+}
+
+/*
+End Mobile Padding
+*/
+
+@supports (grid-area: auto) {
+
+/*
+Begin Mobile
+*/
+
+.site {
+	max-width: 799px;
+}
+
+/*
+Begin Mobile Grid
+*/
+
+.head, .main > *, .foot {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.one-item {
+	display: grid;
+	grid-column: 1 / span 2;
+	grid-template-columns: 1fr;
+}
+
+.two-items {
+	display: grid;
+	grid-column: 1 / span 2;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-evenly;
+	row-gap: 2em;
+	column-gap: 2em;
+}
+
+.three-items {
+	display: grid;
+	grid-column: 1 / span 2;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-evenly;
+	row-gap: 2em;
+	column-gap: 7.5em;
+}
+
+.contact-override {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column: 1 / span 2;
+	background: #f4f4f4;
+	border-bottom: 1px solid #ccc;
+}
+
+.custom-override {
+	display: grid;
+	grid-column: 1 / span 2;
+	grid-template-columns: 1fr;
+}
+
+/*
+End Mobile Grid
+*/
+
+/*
+Begin Mobile Header
+*/
+
+header {
+	position: sticky;
+	background-color: #fff;
+	top: 0px;
+}
+
+.logo {
+	grid-column: 1 / span 1;
+}
+
+.logo img {
+	padding: 1em;
+	width: 50%;
+}
+
+/*
+End Mobile Header
+*/
+
+/*
+Begin Mobile Navigation Show/Hide
+*/
+
+.full {
+	display: none;
+}
+
+.mobile {
+	display: grid;
+	grid-column: 2 / span 1;
+}
+
+/*
+End Mobile Navigation Show/Hide
+*/
+
+/*
+Begin Mobile Navigation
+*/
+
+@keyframes bugfix {
+from {
+  padding: 0;
+}
+to {
+  padding: 0;
+}
+}
+
+@-webkit-keyframes bugfix {
+from {
+  padding: 0;
+}
+to {
+  padding: 0;
+}
+}
+
+#overlay-button {
+	position: absolute;
+	right: 1em;
+	padding: 26px 11px;
+	z-index: 5;
+	cursor: crosshair;
+	user-select: none;
+}
+
+#overlay-button span {
+	height: 3px;
+	width: 25px;
+	border-radius: 2px;
+	background-color: #171B3B;
+	position: relative;
+	display: block;
+	transition: all 0.2s ease-in-out;
+}
+
+#overlay-button span:before {
+	top: -7px;
+	visibility: visible;
+}
+
+#overlay-button span:after {
+	top: 7px;
+}
+
+#overlay-button span:before, #overlay-button span:after {
+	height: 3px;
+	width: 25px;
+	border-radius: 2px;
+	background-color: #171B3B;
+	position: absolute;
+	content: "";
+	transition: all 0.2s ease-in-out;
+}
+
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+	background: #171B3B;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+	visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span,
+input[type=checkbox]:checked ~ #overlay-button span {
+	background: transparent;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:before {
+	transform: rotate(45deg) translate(5px, 5px);
+	opacity: 1;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:after {
+	transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#overlay {
+	height: 100vh;
+	width: 100vw;
+	background: #fff;
+	z-index: 2;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#overlay.active {
+	visibility: visible;
+}
+
+#overlay ul {
+	display: flex;
+	color: #171B3B;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	text-align: left;
+	height: 100vh;
+	padding-left: 1em;
+	list-style-type: none;
+}
+
+#overlay ul li {
+	padding: .75em;
+	margin-bottom: 4em;
+}
+
+#overlay ul li a {
+	color: #171B3B;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 3.5em;
+	cursor: crosshair;
+}
+
+#overlay ul li a:hover {
+	color: #000;
+	border-bottom: 5px solid;
+	border-bottom-color: #F7AF2A;
+}
+
+#overlay ul div {
+	align-self: center;
+}
+
+#overlay ul div a img {
+	height: 75%;
+	float: left;
+	padding: 10px;
+	cursor: crosshair;
+}
+
+#overlay ul div img:hover {
+	border-bottom: 3px solid;
+	border-bottom-color: #F7AF2A;
+}
+
+/*
+End Mobile Navigation
+*/
+
+/*
+Begin Mobile Hero
+*/
+
+.hero {
+margin: 0;
+}
+
+.hero div video {
+		width: 100%;
+	}
+
+video[poster] {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.videoControls {
+	width: 100%;
+	margin: auto;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	position: relative;
+}
+
+.videoControls img {
+	display: block;
+	margin: 0 auto;
+}
+
+/*
+End Mobile Hero
+*/
+
+/*
+Begin Mobile Body
+*/
+
+.chooseLux {
+	margin: auto;
+	padding-top: 1em;
+}
+
+.luxDesc {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.adImages {
+	display: inline;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	padding-left: 2.5em;
+	overflow: hidden;
+	justify-content: space-between;
+}
+
+.adImages img {
+	padding-left: 2.5em;
+}
+
+/*
+End Mobile Body
+*/
+
+/*
+Begin Mobile Footer
+*/
+
+footer {
+	color: #fff;
+	overflow: hidden;
+}
+
+footer nav {
+	margin-bottom: 1.5em;
+}
+
+footer nav a {
+	display: inline;
+	font-weight: bold;
+	font-size: 1em;
+	color: #171B3B;
+	text-decoration: none;
+	cursor: crosshair;
+}
+
+footer nav a:first-child {
+	margin-left: 0.90em;
+}
+
+footer nav a:hover {
+	border-bottom: 3px solid #F7AF2A;
+}
+
+footer h4 a {
+	padding: 1.5em 1.5em 1.4em;
+	background-color: #9a2018;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.contactBtn {
+	background-color: #171B3B;
+	border: none;
+	text-align: center;
+	padding: 0.5em;
+	width: 10em;
+	border-radius: 20px;
+	cursor: crosshair;
+	margin: auto;
+}
+
+.contactBtn:hover {
+	background-color: #F7AF2A;
+}
+
+button a {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: crosshair;
+}
+
+#mobileSocials {
+	display: inline;
+	margin: auto;
+	padding-top: 1.5em;
+	align-self: center;
+	padding-right: 2px;
+}
+
+#mobileSocials a img {
+	margin-right: 1em;
+	cursor: crosshair;
+}
+
+#mobileSocials a img:hover {
+	border-bottom: 0.5em solid;
+	border-bottom-color: #F7AF2A;
+	cursor: crosshair;
+}
+
+.footer-spacing {
+	padding: 3em 0em 3em 0em;
+}
+
+/*
+End Mobile Footer
+*/
+
+	}
+   }
