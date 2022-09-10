@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <title>Lux - Luxury Design Agency</title>
@@ -12,35 +15,30 @@
   <h1 class="hidden">Lux - Luxury Design Agency</h1>
   <a class="hidden" href="#content">Skip to Content</a>
   <!-- begin header -->
-  <header class="header">
+  <header class="head">
     <div class="logo">
-      <img src="" alt="Lux Logo">
+        <img src="images/lux_logoClear.svg" alt="Lux Design Agency Logo">
     </div>
     <!-- begin mobile menu -->
     <div class="mobile">
       <input type="checkbox" id="overlay-input"/>
       <label for="overlay-input" id="overlay-button"><span></span></label>
       <div id="overlay">
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="team.html">About Us</a></li>
-          <li><a href="portfolio.html">Our Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+          <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="team.html">About Us</a></li>
+              <li><a href="index.html">Our Work</a></li>
+              <li><a href="index.html">Contact Us</a></li>
+              <div class="mobileIcons">
+              <a href="https://instagram.com"><img class="mobileSocial" src="images/instagram.svg" alt="Instagram Logo"></a>
+              <a href="https://facebook.com"><img class="mobileSocial" src="images/facebook.svg" alt="Facebook Logo"></a>
+                <a href="https://snapchat.com"><img class="mobileSocial" src="images/snapchat.svg" alt="Snapchat Logo"></a>
+                <a href="https://youtube.com"><img class="mobileSocial" src="images/youtube.svg" alt="Youtube Logo"></a>
+              </div>
+          </ul>
       </div>
     </div>
     <!-- end mobile menu -->
-    <!-- begin navigation -->
-    <nav class="nav full" aria-label="Main Navigation">
-      <h3 class="hidden">Main Navigation</h3>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="team.html">About Us</a></li>
-        <li><a href="portfolio.html">Our Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- end navigation -->
   </header>
   <!-- end header -->
   <!-- begin body -->
@@ -48,68 +46,70 @@
     <!-- begin hero -->
     <section class="hero">
       <h2 class="hidden">Introduction Video</h2>
-      <div class="hero-vid">
-        <!-- need to figure out how to make the video responsive -->
-        <video poster="" autoplay="true" loop>
-          <source src="" type="video/mp4">
+      <div class="heroVideo custom-override mobile-padding">
+        <video loop autoplay playsinline poster="images/drink.jpg" class="heroVid">
+          <source src="videos/fillerVid.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="videoControls">
-        <!-- need to figure out these controls -->
+      <div class="videoControls two-items">
+        <img src="images/play.svg" alt="Play Button">
+        <img src="images/pause.svg" alt="Pause Button">
       </div>
     </section>
     <!-- end hero -->
     <!-- begin brand introduction -->
     <section class="indexBody">
     <h2 class="hidden">We Are Luxury</h2>
-      <div class="chooseLux">
-        <p class="titleText">We Are Luxury</p>
-        <p class="paragraph">INSERT COPY HERE</p>
+      <div class="chooseLux one-item custom-override mobile-padding">
+        <p class="titleText">WE ARE LUXURY</p>
+      </div>
+      <div class="luxDesc one-item custom-override mobile-padding">
+        <p class="paragraph">LUX specializes in making businesses shine.<br>
+        Headshots, print marketing and coast-to-coast<br>
+        advertising are just the tip of the iceberg.
+        <br><br>
+        We’re here to elevate your luxury.
+        </p>
       </div>
     <h2 class="hidden">Brand Examples</h2>
-      <div class="adImages">
-        <!-- need to source the correct images, always largest to smallest -->
-        <picture>
-            <!-- image one -->
-            <source media="(min-width:800px)" srcset="images/2200x840.png">
-           <source media="(min-width:465px)" srcset="images/480x480.png">
-           <img src="images/480x480.png" alt="FPO">
-        </picture>
-        <picture>
-            <!-- image two -->
-            <source media="(min-width:800px)" srcset="images/2200x840.png">
-           <source media="(min-width:465px)" srcset="images/480x480.png">
-           <img src="images/480x480.png" alt="FPO">
-        </picture>
+      <div class="adImages two-items mobile-padding">
+          <img src="images/rolexQuote.png" alt="Brand Quote From Rolex">
+          <img src="images/rolex.png" alt="Rolex Advertisement">
       </div>
     </section>
   </main>
   <!-- end body -->
-  <!-- begin footer -->
-  <footer class="footer">
-    <h2 class="hidden">Lux Site Footer</h2>
-    <div class="two-items custom-override margin-tb mobile-padding">
-      <nav aria-label="Footer Navigation">
-      <h3 class="hidden">Footer Navigation</h3>
-        <div class="three-items">
-          <div>
-            <a href="featurePort.html">What we do.</a>
-            <a href="team.html">About us.</a>
-            <a href="portfolio.html">Our work.</a>
+  <!-- begin mobile footer -->
+  <footer class="foot footer-spacing margin-top">
+    <h2 class="hidden">Lux - Luxury Design Agency Footer</h2>
+    <div class="two-items custom-override mobile-padding">
+      <div>
+        <nav aria-label="Footer Navigation">
+        <h3 class="hidden">Footer Navigation</h3>
+          <div class="three-items">
+            <div>
+              <a href="#">What we do.</a>
+            </div>
+            <div>
+              <a href="team.html">About us.</a>
+            </div>
+            <div>
+              <a href="portfolio.html">Our work.</a>
+            </div>
           </div>
-          <div>
-            <h4><a href="contact.html">Let's Talk</a></h4>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
-    <div class="one-item border-top copyright">
-      <p>©2023 Lux Design Agency. All Rights Reserved.</p>
+    <div class="one-item letsTalk">
+      <button class="contactBtn"><a href="contact.html">Let's talk!</a></button>
     </div>
-    <div class="socialIcons">
-      <!-- need to insert social icons -->
+    <div id="mobileSocials" class="custom-override mobile-padding">
+        <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram Logo"></a>
+        <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Logo"></a>
+        <a href="https://snapchat.com"><img src="images/snapchat.svg" alt="Snapchat Logo"></a>
+        <a href="https://youtube.com"><img src="images/youtube.svg" alt="Youtube Logo"></a>
     </div>
   </footer>
-  <!-- end footer -->
+  <!-- end mobile footer -->
 </body>
 </html>

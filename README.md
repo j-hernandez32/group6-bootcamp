@@ -32,7 +32,7 @@ Authors:
 
 Tutorials Used:
 
--
+- Page Hero Background Video (https://docs.generatepress.com/article/page-hero-background-video/)
 -
 
 *All tutorials were significantly tweaked to fit the project.
