@@ -130,6 +130,13 @@ body {
 	color: #000;
 	font-weight: bold;
 	text-align: center;
+	justify-content: center;
+}
+
+.centerTxt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*
@@ -885,7 +892,7 @@ footer h4 a {
 	padding: 0.25em;
 	width: 10em;
 	border-radius: 20px;
-	cursor: crosshair;
+	cursor: pointer;
 	margin: auto;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
@@ -899,6 +906,8 @@ footer h4 a {
 
 .contactBtn:visited {
 	color: #fff;
+	text-decoration: none;
+
 }
 
 #mobileSocials {
@@ -1048,6 +1057,10 @@ end tablet footer
 		color: #000;
 		border-bottom: 5px solid;
 		border-bottom-color: #F7AF2A;
+	}
+	.listFooter ul li a:visited {
+		color: #000;
+		text-decoration: none;
 	}
 
 	.area
