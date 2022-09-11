@@ -480,11 +480,6 @@ ______________________________*/
 
 
 @media only screen and  (max-width: 1280px) and (min-width: 799px){
-	body
-	{
-	  background-color: lightblue;
-	}
-
 	.site
 	{
 		max-width: max-content;
