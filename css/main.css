@@ -578,6 +578,54 @@ Begin Mobile Body
 	margin: 0 auto;
 }
 
+.avoPic {
+	display: grid;
+	grid-column: span 1;
+	margin-bottom: 3em;
+}
+
+.avoPic img {
+	width: 175%;
+	margin-left: 2em;
+}
+
+#yellowUnder {
+	border-bottom: 3px solid;
+	border-bottom-color: #F7AF2A;
+}
+
+#avoTop {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.avoOuter {
+	display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.avoOuter > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.avoDown {
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+.avoUp {
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /*
 End Mobile Body
 */
