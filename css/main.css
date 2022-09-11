@@ -713,6 +713,69 @@ Begin Mobile Body
 	margin: 0 auto;
 }
 
+
+.portfolioPic {
+	position: relative;
+	padding: 0;
+	margin:5em;
+	
+  }
+  
+  .center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 12%;
+	right: 12%;
+	background: #171B3B;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+
+
+	transition: opacity .2s, visibility .2s;
+  }
+
+  .portfolioPic:hover .center {
+	visibility: visible;
+	opacity: .9;
+
+  }
+  
+  .name {
+	transition: .2s;
+	transform: translateY(1em);
+  }
+
+  .name h3
+  {
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom: 10px;
+  }
+
+  .name h4
+  {
+	color: #F7AF2A;
+	font-style: italic;
+
+	padding-bottom: 5px;
+  }
+
+  .proButton
+  {background-color: #171B3B;
+
+  }
+  
+  .portfolioPic:hover .name {
+	transform: translateY(0);
+  }
+
 /*
 End Mobile Body
 */
