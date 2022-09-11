@@ -284,7 +284,7 @@ Begin Mobile Header
 */
 
 header {
-	position: sticky;
+	position: block;
 	background-color: #fff;
 	top: 0px;
 }
@@ -793,7 +793,7 @@ End Mobile Body
 start tablet layout
 */
 
-@media only screen and  (max-width: 1980px) and (min-width: 799px)
+@media only screen and  (max-width: 1280px) and (min-width: 799px)
 {
 	.member
 	{
@@ -808,39 +808,57 @@ start tablet layout
 	{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		gap: 0em;
 	}
-
-	.titleText
-	{
-		text-align: left;
-	}
-
-	#content
-	{
-
-	}
-
-	#content p
-	{
-		text-align: left;
-	}
-
+	
 	.paragraph
 	{
 		font-size: 18px;
 		line-height: 25px;
-		margin: 5em;
+		margin: 4em;
 	}
 
-	.titleText
-	{
-		justify-content: left;
-	}
 }
 
 /*
 end tablet layout
 */
+
+
+/*
+start desktop layout
+*/
+
+@media only screen and (max-width: 1920px) and (min-width: 1280px)
+{
+	.member
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3em;
+
+		padding-top: 0;
+		padding-bottom: 6em;
+		padding-left: 13em;
+		padding-right: 13em;
+		margin: 10em;
+	}
+
+	.porWork
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		padding: 10em;
+	}
+
+
+}
+
+/*
+end desktop layout
+*/
+
 
 
 
@@ -942,7 +960,7 @@ End Mobile Footer
 /*
 start tablet footer
 */
-@media only screen and  (max-width: 1980px) and (min-width: 799px)
+@media only screen and  (max-width: 1280px) and (min-width: 799px)
 {
 	.Mfooter
 	{
@@ -1009,7 +1027,7 @@ end tablet footer
 */
 
 /* start desktop footer */
-@media only screen and  (max-width: 2000px) and (min-width: 1920px)
+@media only screen and  (max-width: 1920px) and (min-width: 1280px)
 {
 	.Mfooter
 	{
