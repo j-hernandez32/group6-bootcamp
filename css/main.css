@@ -467,12 +467,17 @@ End Mobile Navigation
 */
 
 
-/*______________________________
+/*
 start Tablet Nav
-______________________________*/
+*/
 @media only screen and  (max-width: 799px)
 {
 	.navT
+	{
+		display: none;
+	}
+
+	.footerNav
 	{
 		display: none;
 	}
@@ -480,10 +485,6 @@ ______________________________*/
 
 
 @media only screen and  (max-width: 1280px) and (min-width: 799px){
-	body
-	{
-	  background-color: lightblue;
-	}
 
 	.site
 	{
@@ -543,9 +544,9 @@ ______________________________*/
 
   }
 
-  /*______________________________
+  /*
 end Tablet Nav
-______________________________*/
+*/
 
 
 /*
@@ -716,6 +717,63 @@ Begin Mobile Body
 End Mobile Body
 */
 
+
+
+/*
+start tablet layout
+*/
+
+@media only screen and  (max-width: 1280px) and (min-width: 799px)
+{
+	.member
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+
+		padding: 10em;
+	}
+
+	.porWork
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.titleText
+	{
+		text-align: left;
+	}
+
+	#content
+	{
+
+	}
+
+	#content p
+	{
+		text-align: left;
+	}
+
+	.paragraph
+	{
+		font-size: 18px;
+		line-height: 25px;
+		margin: 5em;
+	}
+
+	.titleText
+	{
+		justify-content: left;
+	}
+}
+
+/*
+end tablet layout
+*/
+
+
+
 /*
 Begin Mobile Footer
 */
@@ -806,6 +864,12 @@ footer h4 a {
 /*
 End Mobile Footer
 */
+
+
+
+/*
+start tablet footer
+*/
 @media only screen and  (max-width: 1280px) and (min-width: 799px)
 {
 	.Mfooter
@@ -868,5 +932,8 @@ End Mobile Footer
 
 
 }
+/*
+start tablet footer
+*/
 
 	}
