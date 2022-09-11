@@ -284,7 +284,7 @@ Begin Mobile Header
 */
 
 header {
-	position: block;
+	position: relative;
 	background-color: #fff;
 	top: 0px;
 }
@@ -425,7 +425,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 	display: flex;
 	color: #171B3B;
 	justify-content: center;
-	align-items: left;
+	align-items: flex-start;
 	flex-direction: column;
 	text-align: left;
 	height: 100vh;
