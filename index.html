@@ -55,13 +55,17 @@
     <section class="hero">
       <h2 class="hidden">Introduction Video</h2>
       <div class="heroVideo custom-override mobile-padding">
-        <video loop autoplay playsinline poster="images/drink.jpg" class="heroVid">
+        <video loop autoplay playsinline poster class="heroVid">
           <source src="videos/video_luxDesign.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="videoControls two-items">
+      <div id="buttons" class="videoControls two-items">
+        <div id="playButton">
         <img src="images/play.svg" alt="Play Button">
+      </div>
+      <div id="pauseButton">
         <img src="images/pause.svg" alt="Pause Button">
+        </div>
       </div>
     </section>
     <!-- end hero -->
@@ -151,5 +155,7 @@
       <div class="contactBtn"><a href="contact.html">Let's talk!</a></div>
     </div>
   </div>
+
+<script src="js/script.js"></script> 
 </body>
 </html>
