@@ -17,15 +17,16 @@
 
     playButton.addEventListener('click', playVideo);
     pauseButton.addEventListener('click', pauseVideo);
+    
 
     let img = document.querySelector('img');
       let start = img.src;
       let hover = img.getAttribute('data-hover');
 
-      setTimeout(() => {
+     setTimeout(() => {
         transition_el.classList.remove('activeTran');
       }, 250);
-    }
+    
 
       img.onmouseover = () => { img.src = hover; }
 
