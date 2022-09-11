@@ -610,32 +610,26 @@ Begin Mobile Body
 	padding-bottom: 1.5em;
 }
 
-.adImages {
+.adImg
+{
+	display: flex;
+
+	justify-content: center;
+
+	padding: 0;
+}
+
+.rolexCont
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em;
+
+}
+
+.rolexCont img
+{
 	width: 100%;
-	margin: auto;
-	position: relative;
-	padding-left: 2.5em;
-	overflow: hidden;
-	justify-content: space-between;
-}
-
-.rolexCont {
-	display: table;
-  width: 100%;
-  table-layout: fixed;
-	justify-content: space-between;
-}
-
-.rolexPic {
-	display: table-cell;
-  vertical-align: top;
-  width: 100%;
-	margin: auto;
-}
-
-.rolexPic img {
-	margin: auto;
-	height: 100%;
 }
 
 .teamHeroContent {
@@ -852,6 +846,19 @@ start desktop layout
 		padding: 10em;
 	}
 
+	.rolexCont
+	{
+	padding-left: 15em;
+	padding-right: 15em;
+	padding-top: 5em;
+
+	}
+
+	.rolexCont img
+	{
+	width: 400px;
+	}
+
 
 }
 
@@ -1018,6 +1025,18 @@ start tablet footer
 	.buttonFooter
 	{
 		margin-top: 3em;
+	}
+
+	.rolexCont
+	{
+	padding-left: 10em;
+	padding-right: 10em;
+
+	}
+
+.rolexCont img
+	{
+	width: 300px;
 	}
 
 
