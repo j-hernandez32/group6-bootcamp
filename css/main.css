@@ -110,7 +110,7 @@ input[type="submit"] {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	cursor: crosshair;
+	cursor: default;
 }
 
 .titleText {
@@ -271,12 +271,18 @@ End Mobile Grid
 	padding: 0.5em;
 	width: 10em;
 	border-radius: 20px;
-	cursor: crosshair;
+	cursor: pointer;
 	margin: auto;
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
-	cursor: crosshair;
+	cursor: pointer;
+}
+
+.contact-button button {
+	display: grid;
+	align-items: center;
+	cursor: pointer;
 }
 
 /*
@@ -346,7 +352,7 @@ to {
 	right: 1em;
 	padding: 26px 11px;
 	z-index: 5;
-	cursor: crosshair;
+	cursor: pointer;
 	user-select: none;
 }
 
@@ -444,7 +450,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 3.5em;
-	cursor: crosshair;
+	cursor: pointer;
 }
 
 #overlay ul li a:hover {
@@ -539,7 +545,7 @@ start Tablet Nav
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 1em;
-		cursor: crosshair;
+		cursor: pointer;
 	}
 
 	.navT ul li a:hover 
@@ -812,6 +818,12 @@ start tablet layout
 		margin: 4em;
 	}
 
+	.contact-button button {
+		display: grid;
+		align-items: center;
+		cursor: pointer;
+	}
+
 }
 
 /*
@@ -859,6 +871,11 @@ start desktop layout
 	width: 400px;
 	}
 
+	.contact-button button {
+		display: grid;
+		align-items: center;
+		cursor: pointer;
+	}
 
 }
 
@@ -888,7 +905,7 @@ footer nav a {
 	font-size: 1em;
 	color: #171B3B;
 	text-decoration: none;
-	cursor: crosshair;
+	cursor: pointer;
 }
 
 footer nav a:first-child {
@@ -945,13 +962,13 @@ footer h4 a {
 
 #mobileSocials a img {
 	margin-right: 1em;
-	cursor: crosshair;
+	cursor: pointer;
 }
 
 #mobileSocials a img:hover {
 	border-bottom: 0.5em solid;
 	border-bottom-color: #F7AF2A;
-	cursor: crosshair;
+	cursor: pointer;
 }
 
 .footer-spacing {
@@ -1007,7 +1024,7 @@ start tablet footer
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 1em;
-		cursor: crosshair;
+		cursor: pointer;
 	}
 
 	.listFooter ul li a:hover 
@@ -1086,7 +1103,7 @@ end tablet footer
 		font-weight: bold;
 		text-decoration: none;
 		font-size: 1em;
-		cursor: crosshair;
+		cursor: pointer;
 	}
 
 	.listFooter ul li a:hover 
